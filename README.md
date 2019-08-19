@@ -1,9 +1,25 @@
-# Ryan Boyette
+import java.util.Scanner;
 
-Grade 10
+public class lemonade{
 
-I have a middle name. Also, I have a last name.
-
-## What is the readme all about?
-
-The read me is all about what is your project about. Why did you do it, what problems are you having and what steps are you taking?
+     public static void main(String []args){
+         
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("How much lemonade do you want?");
+        
+        int cost = 2;
+        
+        int amount = scan.nextInt();
+        
+        double total = cost * amount;
+        
+        if(total <= 0){
+            System.out.println("Get out of here!");
+        }
+        else {
+            System.out.printf("Total: %.2f", total);
+        }
+        
+     }
+}
